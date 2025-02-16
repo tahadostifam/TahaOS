@@ -2,7 +2,7 @@
   imports = [
     ./git.nix
     ./hyprland
-    ./gnome
+    ./gnome.nix
     ./neovim.nix
     ./waybar
     ./wofi
