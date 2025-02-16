@@ -4,7 +4,7 @@
       x11.enable = true;
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
-      size = 16;
+      size = 17;
   };
 
   gtk = {
@@ -16,13 +16,29 @@
     };
 
     iconTheme = {
-      package = pkgs.adwaita-icon-theme;
-      name = "Adwaita";
+      package = pkgs.whitesur-icon-theme;
+      name = "WhiteSur-Dark";
     };
 
     font = {
       name = "Sans";
       size = 11;
+    };
+  };
+
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/shell" = {
+        disable-user-extensions = false; 
+        enabled-extensions = [
+          "blur-my-shell@anet"
+        ];
+      };
+      "org/gnome/shell/extensions/blur-my-shell" = {
+        brightness = 0.75;
+        noise-amount = 0;
+      };
     };
   };
 }
