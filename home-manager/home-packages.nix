@@ -50,5 +50,17 @@
     # Other
     nix-prefetch-scripts
     nixpkgs-fmt
+
+    # Icon Fonts
+    font-awesome_5
+    noto-fonts
+    noto-fonts-emoji
+    mplus-outline-fonts.githubRelease
+
+    # Persian fonts
+    ir-standard-fonts
+    vazir-fonts
+    vazir-code-font
+    shabnam-fonts
   ];
 }

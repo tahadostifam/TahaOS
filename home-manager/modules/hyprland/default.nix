@@ -106,6 +106,7 @@
       exec-one=gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh &
       exec-one=~/.hyprscripts/wall.sh ~/hyprwall.jpg
       exec-one=swaync &
+      exec-one=waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css &
     '';
   };
 }

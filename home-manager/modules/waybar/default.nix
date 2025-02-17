@@ -1,10 +1,10 @@
 {
-  home.file.".waybar/config" = {
+  home.file.".config/waybar/config" = {
     source = ./config.jsonc;
     recursive = true;
   };
 
-  home.file.".waybar/style.css" = {
+  home.file.".config/waybar/style.css" = {
     source = ./style.css;
     recursive = true;
   };
