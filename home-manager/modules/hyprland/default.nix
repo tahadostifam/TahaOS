@@ -1,10 +1,7 @@
-{
-  home.file = {
-    ".hyprscripts/screenshot.sh" = {
-      source = ./screenshot.sh;
-      recursive = true;
-    };
-  };
+{ 
+  imports = [
+    ./scripts.nix
+  ];
 
   wayland.windowManager.hyprland.settings = {
     "monitor" = ",preferred,auto,1";
