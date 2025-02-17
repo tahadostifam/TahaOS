@@ -36,5 +36,6 @@
 
     # Other
     nix-prefetch-scripts
+    nixpkgs-fmt
   ];
 }
