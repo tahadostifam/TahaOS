@@ -1,7 +1,6 @@
-{ 
+{
   imports = [
     ./scripts
-    ./session.nix
   ];
 
   wayland.windowManager.hyprland.settings = {
@@ -98,5 +97,18 @@
         ", XF86MonBrightnessUp, exec, ~/.hyprscripts/backlight.sh --inc"
         ", XF86MonBrightnessDown, exec, ~/.hyprscripts/backlight.sh --dec"
       ];
+
+    home.file.".hyprwall.jpg" = {
+      source = ./default_wall.jpg;
+      recursive = true;
+    };
+
+    extraConfig = ''
+      exec-one=polkit-gnome-authentication-agent-1 &
+      exec-one=gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh &
+      exec-one=waybar -c $HOME/.config/hypr/component/waybar/config -s $HOME/.config/hypr/component/waybar/style.css &
+      exec-one=dunst &
+      exec-one=~/.hyprscripts/wall.sh ~/.hyprwall.jpg
+    '';
   };
 }
