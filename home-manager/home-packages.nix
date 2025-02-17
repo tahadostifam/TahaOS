@@ -33,6 +33,17 @@
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
+    nwg-bar
+    swww
+    waypaper
+    wofi
+    hyprlock
+    grim
+    slurp
+    swappy
+    jq
+    dunst
+    fastfetch
 
     # Other
     nix-prefetch-scripts

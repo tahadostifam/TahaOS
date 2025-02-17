@@ -3,6 +3,11 @@
     ./scripts
   ];
 
+  # Load Wallpaper
+  home.file."hyprwall.jpg" = {
+    source = ./default_wall.jpg;
+  };
+
   wayland.windowManager.hyprland.settings = {
     "monitor" = ",preferred,auto,1";
     "$mod" = "SUPER";
@@ -85,8 +90,6 @@
         "$mod,right,movefocus,r"
         "$mod,up,movefocus,u"
         "$mod,down,movefocus,d"
-        "$mod,mouse_down,workspace,e+1"
-        "$mod,mouse_up,workspace,e-1"
         ",Print,exec, ~/.hyprscripts/screenshot_full.sh"
         "$mod, Print, exec, ~/.hyprscripts/screenshot.sh"
 
@@ -98,17 +101,12 @@
         ", XF86MonBrightnessDown, exec, ~/.hyprscripts/backlight.sh --dec"
       ];
 
-    home.file.".hyprwall.jpg" = {
-      source = ./default_wall.jpg;
-      recursive = true;
-    };
-
     extraConfig = ''
       exec-one=polkit-gnome-authentication-agent-1 &
       exec-one=gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh &
-      exec-one=waybar -c $HOME/.config/hypr/component/waybar/config -s $HOME/.config/hypr/component/waybar/style.css &
+      exec-one=waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css &
       exec-one=dunst &
-      exec-one=~/.hyprscripts/wall.sh ~/.hyprwall.jpg
+      exec-one=~/.hyprscripts/wall.sh ~/hyprwall.jpg
     '';
   };
 }
