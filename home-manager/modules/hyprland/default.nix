@@ -50,7 +50,7 @@
       };
     };
 
-    windowrule = "'float,^(gnome-terminal)$'";
+    windowrule = "'float,^(alacritty)$'";
 
     animations = {
       enabled = 1;
@@ -78,7 +78,7 @@
       [
         "$mod,mouse:272,movewindow"
         "$mod,mouse:273,resizewindow"
-        "$mod,RETURN,exec,gnome-terminal"
+        "$mod,RETURN,exec,alacritty"
         "$mod,Q,killactive,"
         "$mod,M,exec,nwg-bar"
         "$mod,E,exec, nautilus"
@@ -104,9 +104,8 @@
     extraConfig = ''
       exec-one=polkit-gnome-authentication-agent-1 &
       exec-one=gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh &
-      exec-one=waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css &
-      exec-one=dunst &
       exec-one=~/.hyprscripts/wall.sh ~/hyprwall.jpg
+      exec-one=swaync &
     '';
   };
 }

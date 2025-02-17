@@ -4,8 +4,8 @@
     ./hyprland
     ./gnome.nix
     ./neovim.nix
-    ./waybar
     ./wofi
+    ./waybar
     ./zsh.nix
   ];
 }

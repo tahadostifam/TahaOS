@@ -34,6 +34,7 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     nwg-bar
+    waybar
     swww
     waypaper
     wofi
@@ -42,8 +43,9 @@
     slurp
     swappy
     jq
-    dunst
     fastfetch
+    alacritty
+    swaynotificationcenter
 
     # Other
     nix-prefetch-scripts

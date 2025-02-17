@@ -1,6 +1,6 @@
 {
   environment.sessionVariables = rec {
-    TERMINAL = "gnome-terminal";
+    TERMINAL = "alacritty";
     EDITOR = "nvim";
     XDG_BIN_HOME = "$HOME/.local/bin";
     PATH = [
