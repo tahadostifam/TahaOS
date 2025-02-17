@@ -1,6 +1,7 @@
 { 
   imports = [
-    ./scripts.nix
+    ./scripts
+    ./session.nix
   ];
 
   wayland.windowManager.hyprland.settings = {
@@ -69,7 +70,6 @@
       workspace_swipe_fingers = 4;
     };
 
-
     bind =
       [
         "$mod,mouse:272,movewindow"
@@ -95,8 +95,8 @@
         ", XF86AudioLowerVolume, exec, ~/.hyprscripts/volume.sh --dec"
         ", XF86AudioMicMute, exec, ~/.hyprscripts/volume.sh --toggle-mic"
         ", XF86AudioMute, exec, ~/.hyprscripts/volume.sh --toggle-mic"
-        ", XF86MonBrightnessUp, exec, ~/.hyprscripts/backlight --inc"
-        ", XF86MonBrightnessDown, exec, ~/.hyprscripts/backlight --dec"
+        ", XF86MonBrightnessUp, exec, ~/.hyprscripts/backlight.sh --inc"
+        ", XF86MonBrightnessDown, exec, ~/.hyprscripts/backlight.sh --dec"
       ];
   };
 }
