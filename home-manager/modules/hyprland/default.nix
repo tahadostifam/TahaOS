@@ -1,7 +1,6 @@
 {
   imports = [
     ./scripts
-    ./startup.nix
   ];
 
   # Load Wallpaper
