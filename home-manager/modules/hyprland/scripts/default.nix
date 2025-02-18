@@ -19,10 +19,5 @@
       source = ./volume.sh;
       recursive = true;
     };
-
-    ".hyprscripts/wall.sh" = {
-      source = ./wall.sh;
-      recursive = true;
-    };
   };
 }

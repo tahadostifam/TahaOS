@@ -29,16 +29,24 @@
 
     (nerdfonts.override {
       fonts = [
+        "RobotoMono"
         "FiraCode"
         "DroidSansMono"
         "DejaVuSansMono"
         "Hack"
         "Meslo"
-        "RobotoMono"
         "UbuntuMono"
         "SourceCodePro"
       ];
     })
   ];
+
+  fonts.fontconfig = {
+    defaultFonts = {
+      serif = [ "RobotoMono" "Vazirmatn" ];
+      sansSerif = [ "Ubuntu" "Vazirmatn" ];
+      monospace = [ "Ubuntu Mono" ];
+    };
+  };
 }
 
