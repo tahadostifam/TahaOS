@@ -48,12 +48,13 @@
     };
 
     general = {
-      # gaps_in = 8;
-      # gaps_out = 15;
-      # border_size = 3;
-      # col.active_border = "rgba(00b418f1) rgba(2bff48f1) 10deg";
-      # col.inactive_border = "0xff45475a";
-      # allow_tearing = true;
+      gaps_in = 8;
+      gaps_out = 15;
+      border_size = 3;
+      allow_tearing = true;
+      extend_border_grab_area = 50;
+      "col.active_border" = "rgba(00b418f1) rgba(2bff48f1) 10deg";
+      "col.inactive_border" = "0xff45475a";
     };
 
     decoration = {
@@ -71,19 +72,22 @@
       };
     };
 
-    # windowrule = "'float,^(alacritty)$'";
+    windowrule = [
+      "float, title:(alacritty)(.*)"
+    ];
 
-    # animations = {
-    #   enabled = 1;
-    #   bezier = "overshot,0.13,0.99,0.29,1.1";
-    #   animations_list = [
-    #     { type = "windows"; duration = 1; speed = 4; curve = "overshot"; style = "slide"; }
-    #     { type = "border"; duration = 1; speed = 10; curve = "default"; }
-    #     { type = "fade"; duration = 1; speed = 10; curve = "default"; }
-    #     { type = "workspaces"; duration = 1; speed = 6; curve = "overshot"; style = "slidefade 40%"; }
-    #   ];
-    #   first_launch_animation = false;
-    # };
+    animations = {
+      enabled = true;
+      bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+      animation = [
+        "windows,     1, 7,  myBezier"
+        "windowsOut,  1, 7,  default, popin 80%"
+        "border,      1, 10, default"
+        "borderangle, 1, 8,  default"
+        "fade,        1, 7,  default"
+        "workspaces,  1, 6,  default"
+      ];
+    };
 
     dwindle = {
       pseudotile = 1; # enable pseudotiling on dwindle
@@ -95,10 +99,13 @@
       workspace_swipe_fingers = 4;
     };
 
+    bindm = [
+      "SUPER,mouse:272,movewindow"
+      "SUPER,mouse:273,resizewindow"
+    ];
+
     bind =
       [
-        "SUPER,mouse:272,movewindow"
-        "SUPER,mouse:273,resizewindow"
         "SUPER,RETURN,exec,alacritty"
         "SUPER,Q,killactive,"
         "SUPER,M,exec,nwg-bar"
@@ -120,6 +127,28 @@
         ", XF86AudioMute, exec, ~/.hyprscripts/volume.sh --toggle-mic"
         ", XF86MonBrightnessUp, exec, ~/.hyprscripts/backlight.sh --inc"
         ", XF86MonBrightnessDown, exec, ~/.hyprscripts/backlight.sh --dec"
+
+        "SUPER,1,workspace,1"
+        "SUPER,2,workspace,2"
+        "SUPER,3,workspace,3"
+        "SUPER,4,workspace,4"
+        "SUPER,5,workspace,5"
+        "SUPER,6,workspace,6"
+        "SUPER,7,workspace,7"
+        "SUPER,8,workspace,8"
+        "SUPER,9,workspace,9"
+        "SUPER,0,workspace,10"
+
+        "SUPERSHIFT,1,movetoworkspace,1"
+        "SUPERSHIFT,2,movetoworkspace,2"
+        "SUPERSHIFT,3,movetoworkspace,3"
+        "SUPERSHIFT,4,movetoworkspace,4"
+        "SUPERSHIFT,5,movetoworkspace,5"
+        "SUPERSHIFT,6,movetoworkspace,6"
+        "SUPERSHIFT,7,movetoworkspace,7"
+        "SUPERSHIFT,8,movetoworkspace,8"
+        "SUPERSHIFT,9,movetoworkspace,9"
+        "SUPERSHIFT,0,movetoworkspace,10"
       ];
   };
 }

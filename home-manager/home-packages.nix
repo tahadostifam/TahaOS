@@ -43,6 +43,7 @@
     slurp
     swappy
     jq
+    wl-clipboard
     fastfetch
     alacritty
     swaynotificationcenter
