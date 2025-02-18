@@ -48,7 +48,9 @@
     pamixer
     fastfetch
     alacritty
+    htop
     swaynotificationcenter
+    polkit_gnome
 
     # Other
     nix-prefetch-scripts

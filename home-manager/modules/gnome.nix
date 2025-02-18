@@ -1,10 +1,10 @@
 { pkgs, ... }: {
   home.pointerCursor = {
-      gtk.enable = true;
-      x11.enable = true;
-      package = pkgs.bibata-cursors;
-      name = "Bibata-Modern-Classic";
-      size = 17;
+    gtk.enable = true;
+    x11.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 17;
   };
 
   gtk = {
@@ -30,7 +30,7 @@
     enable = true;
     settings = {
       "org/gnome/shell" = {
-        disable-user-extensions = false; 
+        disable-user-extensions = false;
         enabled-extensions = [
           "blur-my-shell@anet"
         ];

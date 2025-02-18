@@ -7,6 +7,7 @@
     ./wofi
     ./waybar
     ./zsh.nix
+    ./polkit.nix
     ./alacritty
   ];
 }

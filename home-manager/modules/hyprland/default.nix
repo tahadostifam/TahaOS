@@ -50,7 +50,7 @@
     general = {
       gaps_in = 8;
       gaps_out = 15;
-      border_size = 2;
+      border_size = 0; # set 2 if you like
       allow_tearing = true;
       extend_border_grab_area = 50;
       "col.active_border" = "rgba(db7323FF) rgba(ff8221FF) 10deg";
