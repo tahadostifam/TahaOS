@@ -8,6 +8,15 @@
     source = ./default_wall.jpg;
   };
 
+  home.sessionVariables = {
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_TYPE = "wayland";
+    XDG_SESSION_DESKTOP = "Hyprland";
+    GDK_BACKEND = "wayland,x11";
+    CLUTTER_BACKEND = "wayland";
+    WLR_RENDERER = "vulkan";
+  };
+
   wayland.windowManager.hyprland.settings = {
     "monitor" = ",preferred,auto,1";
     "$mod" = "SUPER";
@@ -78,7 +87,7 @@
       [
         "$mod,mouse:272,movewindow"
         "$mod,mouse:273,resizewindow"
-        "$mod,RETURN,exec,alacritty"
+        "$mod,RETURN,alacritty"
         "$mod,Q,killactive,"
         "$mod,M,exec,nwg-bar"
         "$mod,E,exec, nautilus"
@@ -101,12 +110,6 @@
         ", XF86MonBrightnessDown, exec, ~/.hyprscripts/backlight.sh --dec"
       ];
 
-    extraConfig = ''
-      exec-one=polkit-gnome-authentication-agent-1 &
-      exec-one=gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh &
-      exec-one=~/.hyprscripts/wall.sh ~/hyprwall.jpg
-      exec-one=swaync &
-      exec-one=waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css &
-    '';
+    wayland.windowManager.hyprland.systemd.variables = [ "--all" ];
   };
 }

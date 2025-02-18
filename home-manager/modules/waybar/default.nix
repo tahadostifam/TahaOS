@@ -8,4 +8,8 @@
     source = ./style.css;
     recursive = true;
   };
+
+  programs.waybar = {
+    enable = true;
+  };
 }

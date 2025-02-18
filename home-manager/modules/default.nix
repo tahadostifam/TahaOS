@@ -3,7 +3,7 @@
     ./git.nix
     ./hyprland
     ./gnome.nix
-    ./neovim.nix
+    ./fonts.nix
     ./wofi
     ./waybar
     ./zsh.nix
