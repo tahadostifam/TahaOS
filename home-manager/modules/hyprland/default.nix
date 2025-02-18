@@ -22,6 +22,14 @@
     "monitor" = ",preferred,auto,1";
     "$mod" = "SUPER";
 
+    exec-once = [
+      "waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css &"
+      "polkit-gnome-authentication-agent-1 &"
+      "gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh &"
+      "~/.hyprscripts/wall.sh ~/hyprwall.jpg"
+      "swaync &"
+    ];
+
     input = {
       kb_layout = "us,ir";
       kb_options = "grp:alt_shift_toggle";
