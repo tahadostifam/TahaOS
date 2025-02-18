@@ -7,5 +7,6 @@
     ./wofi
     ./waybar
     ./zsh.nix
+    ./alacritty
   ];
 }
