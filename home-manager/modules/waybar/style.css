@@ -15,11 +15,11 @@
 #pulseaudio,
 #custom-logo,
 #tray,
-#language, #window {
+#language,
+#window {
   border-radius: 15px;
   background-color: #db7323;
   color: #fff;
-  box-shadow: #0000001e 2 2 5 2px;
   padding: 0 10px;
   margin-top: 10px;
   margin-right: 5px;
@@ -46,7 +46,7 @@ window#waybar {
   margin-left: 5px;
 }
 
-#workspaces button:hover{
+#workspaces button:hover {
   border: none;
 }
 
@@ -98,11 +98,11 @@ window#waybar {
   color: #fff;
 }
 
-#tray>.passive {
+#tray > .passive {
   -gtk-icon-effect: dim;
 }
 
-#tray>.needs-attention {
+#tray > .needs-attention {
   -gtk-icon-effect: highlight;
   background: #db7323;
 }
