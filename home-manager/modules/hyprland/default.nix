@@ -124,7 +124,7 @@
         ", XF86AudioRaiseVolume, exec, ~/.hyprscripts/volume.sh --inc"
         ", XF86AudioLowerVolume, exec, ~/.hyprscripts/volume.sh --dec"
         ", XF86AudioMicMute, exec, ~/.hyprscripts/volume.sh --toggle-mic"
-        ", XF86AudioMute, exec, ~/.hyprscripts/volume.sh --toggle-mic"
+        ", XF86AudioMute, exec, ~/.hyprscripts/volume.sh --toggle"
         ", XF86MonBrightnessUp, exec, ~/.hyprscripts/backlight.sh --inc"
         ", XF86MonBrightnessDown, exec, ~/.hyprscripts/backlight.sh --dec"
 

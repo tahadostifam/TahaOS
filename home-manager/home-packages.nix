@@ -44,6 +44,8 @@
     swappy
     jq
     wl-clipboard
+    brightnessctl
+    pamixer
     fastfetch
     alacritty
     swaynotificationcenter

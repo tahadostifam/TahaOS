@@ -22,19 +22,14 @@ get_icon() {
 	fi
 }
 
-# Notify
-notify_user() {
-	notify-send -h string:x-canonical-private-synchronous:sys-notify -u low -i "$(get_icon)" "Volume : $(get_volume) %"
-}
-
 # Increase Volume
 inc_volume() {
-	pamixer -i 5 && notify_user
+	pamixer -i 5 
 }
 
 # Decrease Volume
 dec_volume() {
-	pamixer -d 5 && notify_user
+	pamixer -d 5 
 }
 
 # Toggle Mute
