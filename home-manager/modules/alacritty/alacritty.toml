@@ -1,53 +1,33 @@
-# alacritty.toml
-# commented lines are the defaults
-# man 5 alacritty (>0.13) for full config manual
-
-#import = [
-#"~/.config/alacritty/catpuccin-mocha.toml",
-#"~/.config/alacritty/keybindings.toml",
-#]
-
-[shell]
-program               = "/usr/bin/zsh"
+[terminal.shell]
+program               = "zsh"
 args                  = [ "--login", ]
 
-#working_directory     = "None"
-#live_config_reload    = true
-#ipc_socket            = true
+live_config_reload    = true
 
 [env]
 TERM                  = "xterm-256color"
 
 [window]
-#dimensions            = { columns = 0, lines = 0 }
-#position              = { x = 0, y = 0 }
 padding               = { x = 2, y = 2 }
-#dynamic_padding       = true
 decorations           = "None"
-opacity               = 1.0
+opacity               = 0.8
 blur                  = true
-#startup_mode          = "Windowed"
-#title                 = "Alacritty"
-#dynamic_title         = true
-#class                 = { instance = "Alacritty", general = "Alacritty" }
-#decorations_theme_variant = "None"
-#resize_increments     = false
-#option_as_alt         = "None"
-
+startup_mode          = "Windowed"
+title                 = "Alacritty"
+dynamic_title         = true
 
 [scrolling]
 history               = 65535
-#multiplier            = 3
 
 [font]
-normal                = { family = "FantasqueSansMNerdFont Propo", style = "Regular" }
-bold                  = { family = "FantasqueSansMNerdFont Propo", style = "Bold" }
-italic                = { family = "FantasqueSansMNerdFont Propo", style = "Italic" }
-bold_italic           = { family = "FantasqueSansMNerdFont Propo", style = "Bold Italic" }
-#size                  = 11.25
+normal                = { family = "UbuntuMono", style = "Regular" }
+bold                  = { family = "UbuntuMono", style = "Bold" }
+italic                = { family = "UbuntuMono", style = "Italic" }
+bold_italic           = { family = "UbuntuMono", style = "Bold Italic" }
+size                  = 11.25
 offset                = { x = 0, y = 0 }
 glyph_offset          = { x = 0, y = 0 }
-#builtin_box_drawing   = true
+builtin_box_drawing   = true
 
 
 # catpuccin-mocha, ported from .yml
