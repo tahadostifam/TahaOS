@@ -14,16 +14,16 @@ window {
   color: #fff;
   font-weight: bold;
   background: #050505;
-  border: 2px solid #2bff47;
+  border: 2px solid #db7323;
   outline: none;
-  border-radius: 15px;
+  border-radius: 5px;
   margin: 10px;
   margin-bottom: 2px;
 }
 
 #input:focus, #input:hover {
   outline: none;
-  border: 2px solid #2bff47;
+  border: 2px solid #db7323;
 }
 
 #inner-box {
@@ -39,6 +39,7 @@ window {
   margin: 0px;
   border: none;
   border-radius: 15px;
+  padding: 30px;
 }
 
 #scroll {
@@ -56,7 +57,7 @@ window {
 #text:selected {
   margin: 0px 0px;
   margin-left: 10px;
-  color: #000;
+  color: #fff;
   border: none;
   border-radius: 15px;
 }
@@ -64,13 +65,13 @@ window {
 #entry {
   margin: 0px 0px;
   border: none;
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: transparent;
 }
 
 #entry:selected {
   margin: 0px 0px;
   border: none;
-  border-radius: 15px;
-  background: #2bff47;
+  border-radius: 5px;
+  background: #db7323;
 }
