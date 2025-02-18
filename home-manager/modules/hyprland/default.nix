@@ -50,18 +50,17 @@
     general = {
       gaps_in = 8;
       gaps_out = 15;
-      border_size = 3;
+      border_size = 2;
       allow_tearing = true;
       extend_border_grab_area = 50;
-      "col.active_border" = "rgba(00b418f1) rgba(2bff48f1) 10deg";
-      "col.inactive_border" = "0xff45475a";
+      "col.active_border" = "rgba(db7323FF) rgba(ff8221FF) 10deg";
+      "col.inactive_border" = "rgba(0f0f0f00)";
     };
 
     decoration = {
-      rounding = 10;
+      rounding = 7;
       shadow = {
-        enabled = true;
-        range = 2;
+        enabled = false;
       };
       blur = {
         enabled = true;

@@ -1,12 +1,11 @@
 * {
-  font-family: "Noto Sans", "Font Awesome 5 Free";
-  font-size: 13px;
+  font-family: Noto Sans, FontAwesome, Roboto, Helvetica, Arial, sans-serif, Vazirmatn;
+  font-size: 12px;
 }
 
 #custom-logo {
   font-weight: bolder;
   margin-left: 17px;
-  font-size: 20px;
 }
 
 #clock,
@@ -19,7 +18,7 @@
   border-radius: 15px;
   background-color: #db7323;
   color: #fff;
-  box-shadow: #0000001e 2 2 5 2px;
+  box-shadow: rgba(0, 0, 0, 0.116) 2 2 5 2px;
   padding: 0 10px;
   margin-top: 10px;
   margin-right: 5px;
@@ -54,16 +53,16 @@ window#waybar {
   background: #11111b;
   border-radius: 15px;
   margin-right: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-weight: bolder;
   color: #fff;
   transition: all 0.1s ease-in-out;
 }
 
 #workspaces button.active {
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 3px;
   background: #db7323;
 }
@@ -81,6 +80,7 @@ window#waybar {
 #battery {
   background: #db7323;
   color: #fff;
+  font-size: 15px;
   padding-left: 15px;
   padding-right: 15px;
 }
