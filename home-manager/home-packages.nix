@@ -52,9 +52,11 @@
     htop
     swaynotificationcenter
     polkit_gnome
+    networkmanagerapplet
 
     # Other
     nix-prefetch-scripts
     nixpkgs-fmt
+    direnv
   ];
 }
