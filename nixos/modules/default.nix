@@ -15,5 +15,6 @@
     ./timezone.nix
     ./user.nix
     ./zram.nix
+    ./docker.nix
   ];
 }
