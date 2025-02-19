@@ -21,6 +21,8 @@
 
     # Coding stuff
     nodejs
+    pnpm
+    yarn
     python311
     ruby 
     rustup
@@ -29,7 +31,6 @@
     cmake
 
     # WM stuff
-    libsForQt5.xwaylandvideobridge
     libnotify
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
