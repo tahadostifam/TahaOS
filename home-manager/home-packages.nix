@@ -29,6 +29,7 @@
     go
     gcc
     cmake
+    postman
 
     # WM stuff
     libnotify
@@ -58,5 +59,6 @@
     nix-prefetch-scripts
     nixpkgs-fmt
     direnv
+    docker-compose
   ];
 }
