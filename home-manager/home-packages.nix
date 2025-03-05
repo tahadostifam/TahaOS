@@ -11,6 +11,7 @@
     vscode
     firefox
     vlc
+    libsForQt5.kdenlive
 
     # CLI utils
     playerctl
@@ -30,6 +31,8 @@
     gcc
     cmake
     postman
+    diesel-cli
+    sqlite
 
     # WM stuff
     libnotify
