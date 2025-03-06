@@ -5,13 +5,11 @@
     obs-studio
     pavucontrol
     telegram-desktop
-    localsearch
     google-chrome
     nekoray
     vscode
-    firefox
+    zed-editor
     vlc
-    libsForQt5.kdenlive
 
     # CLI utils
     playerctl
