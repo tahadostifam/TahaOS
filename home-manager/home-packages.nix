@@ -2,15 +2,16 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
+    localsearch
     obs-studio
+    vlc
     pavucontrol
     telegram-desktop
     google-chrome
     nekoray
     vscode
-    vlc
-
-    localsearch
+    vim
+    neovim
 
     # CLI utils
     playerctl
@@ -55,11 +56,6 @@
     swaynotificationcenter
     polkit_gnome
     networkmanagerapplet
-
-    # Vim stuff
-    vim
-    neovim
-    vimPlugins.lazy-nvim
 
     # Other
     nix-prefetch-scripts
