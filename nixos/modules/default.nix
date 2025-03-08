@@ -16,5 +16,6 @@
     ./user.nix
     ./zram.nix
     ./docker.nix
+    ./printing.nix
   ];
 }

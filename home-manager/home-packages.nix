@@ -8,15 +8,15 @@
     google-chrome
     nekoray
     vscode
-    zed-editor
     vlc
+
+    localsearch
 
     # CLI utils
     playerctl
     unzip
     zip
     wget
-    vim
 
     # Coding stuff
     nodejs
@@ -56,10 +56,15 @@
     polkit_gnome
     networkmanagerapplet
 
+    # Vim stuff
+    vim
+    neovim
+    vimPlugins.lazy-nvim
+
     # Other
     nix-prefetch-scripts
+    docker-compose
     nixpkgs-fmt
     direnv
-    docker-compose
   ];
 }
