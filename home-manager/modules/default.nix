@@ -8,5 +8,6 @@
     ./waybar
     ./zsh.nix
     ./alacritty
+    ./neovim.nix
   ];
 }

@@ -11,8 +11,7 @@
     nekoray
     vscode
     vim
-    neovim
-
+    
     # CLI utils
     playerctl
     unzip
@@ -29,9 +28,12 @@
     go
     gcc
     cmake
+    gnumake
     postman
     diesel-cli
+    postgresql
     sqlite
+    llvmPackages_18.libllvm
 
     # WM stuff
     libnotify

@@ -55,7 +55,7 @@
       border_size = 0; # set 2 if you like
       allow_tearing = true;
       extend_border_grab_area = 50;
-      "col.active_border" = "rgba(db7323FF) rgba(ff8221FF) 10deg";
+      "col.active_border" = "rgba(42f00ce6) rgba(42f00ce6) 10deg";
       "col.inactive_border" = "rgba(0f0f0f00)";
     };
 

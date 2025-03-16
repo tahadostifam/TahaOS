@@ -18,7 +18,7 @@
 #language,
 #window {
   border-radius: 15px;
-  background-color: #db7323;
+  background-color: #419e24;
   color: #fff;
   padding: 0 10px;
   margin-top: 10px;
@@ -65,11 +65,11 @@ window#waybar {
   padding-right: 5px;
   padding-left: 5px;
   padding-bottom: 3px;
-  background: #db7323;
+  background: #419e24;
 }
 
 #clock {
-  background: #db7323;
+  background: #419e24;
   color: #fff;
   font-size: 15px;
   font-weight: bolder;
@@ -79,7 +79,7 @@ window#waybar {
 }
 
 #battery {
-  background: #db7323;
+  background: #419e24;
   color: #fff;
   padding-left: 15px;
   padding-right: 15px;
@@ -90,11 +90,11 @@ window#waybar {
 }
 
 #network {
-  background: #db7323;
+  background: #419e24;
 }
 
 #pulseaudio {
-  background: #db7323;
+  background: #419e24;
   color: #fff;
 }
 
@@ -104,5 +104,5 @@ window#waybar {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background: #db7323;
+  background: #419e24;
 }
