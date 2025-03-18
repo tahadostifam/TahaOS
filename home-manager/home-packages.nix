@@ -10,6 +10,7 @@
     google-chrome
     nekoray
     vscode
+    postman
     vim
     
     # CLI utils
@@ -26,14 +27,23 @@
     ruby 
     rustup
     go
+    
+    # C/C++
     gcc
+    glibc
+    isl
+    libffi
+    libffi.dev
     cmake
     gnumake
-    postman
-    diesel-cli
-    postgresql
-    sqlite
+    libgccjit
+    clang-tools
     llvmPackages_18.libllvm
+
+    # DB
+    diesel-cli
+    sqlite
+    postgresql
 
     # WM stuff
     libnotify
@@ -65,4 +75,8 @@
     nixpkgs-fmt
     direnv
   ];
+
+  home.sessionVariables = {
+    LIBRARY_PATH = "${pkgs.glibc}/lib:${pkgs.gcc_multi}/lib:$LIBRARY_PATH";
+  };
 }
