@@ -9,5 +9,6 @@
     ./zsh.nix
     ./alacritty
     ./neovim.nix
+    ./helix
   ];
 }

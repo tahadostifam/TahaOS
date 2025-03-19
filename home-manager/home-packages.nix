@@ -7,6 +7,7 @@
     vlc
     pavucontrol
     telegram-desktop
+    discord
     google-chrome
     nekoray
     vscode
