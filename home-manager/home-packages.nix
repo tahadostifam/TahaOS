@@ -37,9 +37,7 @@
     libffi.dev
     cmake
     gnumake
-    libgccjit
     clang-tools
-    llvmPackages_18.libllvm
 
     # DB
     diesel-cli
