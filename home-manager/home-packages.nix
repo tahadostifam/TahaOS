@@ -28,16 +28,6 @@
     ruby 
     rustup
     go
-    
-    # C/C++
-    gcc
-    glibc
-    isl
-    libffi
-    libffi.dev
-    cmake
-    gnumake
-    clang-tools
 
     # DB
     diesel-cli
@@ -74,8 +64,4 @@
     nixpkgs-fmt
     direnv
   ];
-
-  home.sessionVariables = {
-    LIBRARY_PATH = "${pkgs.glibc}/lib:${pkgs.gcc_multi}/lib:$LIBRARY_PATH";
-  };
 }
