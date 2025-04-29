@@ -3,7 +3,6 @@
     llvm_18.lib
     llvm_18.dev
     libxml2
-    gcc
     glibc
     isl
     libffi
@@ -11,6 +10,7 @@
     cmake
     gnumake
     clang-tools
+    clang
   ];
 
   home.sessionVariables = {
