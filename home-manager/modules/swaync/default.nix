@@ -2,8 +2,8 @@
   services.swaync = {
     enable = true;
     settings = {
-      positionX = "right";
-      positionY = "top";
+      positionX = "center";
+      positionY = "bottom";
       control-center-radius = 1;
       fit-to-screen = true;
       layer-shell = true;

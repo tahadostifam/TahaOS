@@ -8,8 +8,9 @@
     ./waybar
     ./zsh.nix
     ./alacritty
-    ./helix
     ./llvm.nix
+    ./swaync
+    # ./helix
     # ./neovim.nix
   ];
 }

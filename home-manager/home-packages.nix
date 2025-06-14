@@ -11,6 +11,7 @@
     google-chrome
     nekoray
     vscode
+    zed-editor
     postman
     vim
     
@@ -63,5 +64,6 @@
     docker-compose
     nixpkgs-fmt
     direnv
+    ntfs3g
   ];
 }
