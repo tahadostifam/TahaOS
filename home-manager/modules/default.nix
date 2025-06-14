@@ -6,7 +6,7 @@
     ./fonts.nix
     ./wofi
     # ./waybar
-    ./ags
+    ./ags.nix
     ./zsh.nix
     ./alacritty
     ./llvm.nix

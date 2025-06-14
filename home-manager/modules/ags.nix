@@ -8,21 +8,21 @@
   ];
 
   home.packages = with pkgs; [
-    bun
-    dart-sass
     fd
-    brightnessctl
+    bun
+    gtk3
     swww
-    inputs.matugen.packages.${system}.default
     slurp
-    wf-recorder
-    wl-clipboard
-    wayshot
     swappy
+    wayshot
+    dart-sass
     hyprpicker
     pavucontrol
+    wf-recorder
+    wl-clipboard
+    brightnessctl
     networkmanager
-    gtk3
+    inputs.matugen.packages.${system}.default
   ];
 
   programs.ags = {
