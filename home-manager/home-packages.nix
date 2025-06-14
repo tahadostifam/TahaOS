@@ -40,7 +40,8 @@
     xdg-desktop-portal-gtk
     xdg-desktop-portal-hyprland
     nwg-bar
-    waybar
+    # waybar
+    ags
     swww
     waypaper
     wofi
