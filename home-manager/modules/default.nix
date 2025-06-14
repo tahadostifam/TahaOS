@@ -5,7 +5,8 @@
     ./gnome.nix
     ./fonts.nix
     ./wofi
-    ./waybar
+    # ./waybar
+    ./ags
     ./zsh.nix
     ./alacritty
     ./llvm.nix
