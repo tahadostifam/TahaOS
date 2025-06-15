@@ -8,10 +8,6 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    ags.url = "github:Aylur/ags";
-    astal.url = "github:Aylur/astal";
-    matugen.url = "github:InioX/matugen?ref=v2.2.0";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:

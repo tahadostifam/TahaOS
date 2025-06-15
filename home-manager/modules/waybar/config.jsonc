@@ -1,78 +1,70 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 26,
-    "modules-left": [
-        "custom/logo",
-        "hyprland/workspaces",
-        "hyprland/window"
-    ],
-    "modules-center": [],
-    "modules-right": [
-        "tray",
-        "hyprland/language",
-        "pulseaudio",
-        "network",
-        "battery",
-        "clock"
-    ],
-    "hyprland/window": {
-        "format": "{initialTitle}"
-    },
-    "hyprland/language": {
-        "format-en": "EN",
-        "format-fa": "FA"
-    },
-    "custom/logo": {
-        "format": "⏻",
-        "on-click": "nwg-bar"
-    },
-    "tray": {
-        "spacing": 12
-    },
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%I:%M <tt><small>%p</small></tt>}"
-    },
-    "battery": {
-        "format": "{icon} {capacity}%",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "network": {
-        "format-wifi": "  {essid} ({signalStrength}%)",
-        "format-ethernet": " {ifname}",
-        "tooltip-format": " {ifname} via {gwaddr}",
-        "format-linked": " {ifname} (No IP)",
-        "format-disconnected": "⚠ {ifname}",
-        "format-alt": " {ifname}: {ipaddr}/{cidr}",
-        "on-click-right": "~/.config/wofi/wifi4wofi.sh"
-    },
-    "pulseaudio": {
-        "scroll-step": 5, // %, can be a float
-        "format": "{icon} {volume}% {format_source}",
-        "format-bluetooth": " {icon} {volume}% {format_source}",
-        "format-bluetooth-muted": "  {icon} {format_source}",
-        "format-muted": "  {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "",
-                "",
-                ""
-            ]
-        }
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "modules-left": [
+    "image#distro", "hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": [
+    "hyprland/language",
+    "tray",
+    "pulseaudio",
+    "network",
+    "battery",
+    "clock"
+  ],
+  "hyprland/language": {
+    "format-en": "EN",
+    "format-fa": "FA"
+  },
+  "image#distro": {
+    "path": "./distro.png",
+    "size": 20
+  },
+  "tray": {
+    "spacing": 14
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "{:%I:%M <tt><small>%p</small></tt>}"
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  },
+  "network": {
+    "format-wifi": "  {essid}",
+    "format-ethernet": " {ifname}",
+    "format-linked": " {ifname} (No IP)",
+    "format-disconnected": "⚠ {ifname}"
+    // "tooltip-format": " {ifname} via {gwaddr}",
+    // "format-alt": " {ifname}: {ipaddr}/{cidr}"
+    // "on-click-right": ""
+  },
+  "pulseaudio": {
+    "scroll-step": 5, // %, can be a float
+    "format": "{icon} {volume}% {format_source}",
+    "format-bluetooth": " {icon} {volume}% {format_source}",
+    "format-bluetooth-muted": "  {icon} {format_source}",
+    "format-muted": "  {format_source}",
+    "format-source": " {volume}%",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
     }
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "○",
+      "active": "●"
+    },
+    "on-click": "activate"
+  }
 }

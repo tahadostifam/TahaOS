@@ -25,14 +25,13 @@
 
     exec-once = [
       "swww-daemon"
-      # "waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css"
-      # "ags -b hypr"
+      "waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
       "gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh"
       ''
         swww img ~/hyprwall.jpg --transition-type grow --transition-pos "$(hyprctl cursorpos)" --transition-duration 2
       ''
-      # "swaync"
+      "swaync"
       "nm-applet"
     ];
 
