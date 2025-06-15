@@ -23,6 +23,15 @@
     brightnessctl
     networkmanager
     inputs.matugen.packages.${system}.default
+
+    astal.io
+    astal.cava
+    astal.bluetooth
+    astal.hyprland
+    astal.astal3
+    # astal.tray
+    astal.network
+    astal.battery
   ];
 
   programs.ags = {

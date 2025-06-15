@@ -27,18 +27,13 @@
     vazir-code-font
     shabnam-fonts
 
-    (nerdfonts.override {
-      fonts = [
-        "RobotoMono"
-        "FiraCode"
-        "DroidSansMono"
-        "DejaVuSansMono"
-        "Hack"
-        "Meslo"
-        "UbuntuMono"
-        "SourceCodePro"
-      ];
-    })
+    nerd-fonts.roboto-mono
+    nerd-fonts.ubuntu
+    nerd-fonts.ubuntu-mono
+    nerd-fonts.ubuntu-sans
+    nerd-fonts.fira-code
+    nerd-fonts.fira-mono
+    nerd-fonts.hack
   ];
 
   fonts.fontconfig = {

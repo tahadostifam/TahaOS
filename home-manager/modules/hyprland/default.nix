@@ -26,7 +26,7 @@
     exec-once = [
       "swww-daemon"
       # "waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css"
-      "ags -b hypr"
+      # "ags -b hypr"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
       "gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh"
       ''

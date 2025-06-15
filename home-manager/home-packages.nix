@@ -7,11 +7,9 @@
     vlc
     pavucontrol
     telegram-desktop
-    discord
     google-chrome
     nekoray
     vscode
-    zed-editor
     postman
     vim
     
@@ -31,7 +29,6 @@
     go
 
     # DB
-    diesel-cli
     sqlite
     postgresql
 
