@@ -32,7 +32,7 @@
       ''
         swww img ~/hyprwall.jpg --transition-type grow --transition-pos "$(hyprctl cursorpos)" --transition-duration 2
       ''
-      "swaync"
+      # "swaync"
       "nm-applet"
     ];
 

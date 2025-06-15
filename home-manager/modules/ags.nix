@@ -24,14 +24,18 @@
     networkmanager
     inputs.matugen.packages.${system}.default
 
+    gjs
+    gnome.gvfs
     astal.io
     astal.cava
     astal.bluetooth
     astal.hyprland
     astal.astal3
-    # astal.tray
+    astal.gjs
     astal.network
     astal.battery
+    wrapGAppsHook3
+    gobject-introspection
   ];
 
   programs.ags = {
