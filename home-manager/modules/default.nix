@@ -10,6 +10,5 @@
     ./llvm.nix
     ./swaync
     ./waybar
-    ./nvim
   ];
 }
