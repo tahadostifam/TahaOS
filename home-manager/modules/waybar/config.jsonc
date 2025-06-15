@@ -2,17 +2,22 @@
   "layer": "top",
   "position": "top",
   "height": 34,
-  "modules-left": [
-    "image#distro", "hyprland/workspaces"],
+  "modules-left": ["image#distro", "hyprland/workspaces"],
   "modules-center": [],
   "modules-right": [
     "hyprland/language",
     "tray",
+    "backlight",
     "pulseaudio",
     "network",
     "battery",
     "clock"
   ],
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "ϟ {percent}%",
+    "format-icons": ["", ""]
+  },
   "hyprland/language": {
     "format-en": "EN",
     "format-fa": "FA"
@@ -36,10 +41,7 @@
     "format-wifi": "  {essid}",
     "format-ethernet": " {ifname}",
     "format-linked": " {ifname} (No IP)",
-    "format-disconnected": "⚠ {ifname}"
-    // "tooltip-format": " {ifname} via {gwaddr}",
-    // "format-alt": " {ifname}: {ipaddr}/{cidr}"
-    // "on-click-right": ""
+    "format-disconnected": "☡ {ifname}"
   },
   "pulseaudio": {
     "scroll-step": 5, // %, can be a float
@@ -57,7 +59,8 @@
       "portable": "",
       "car": "",
       "default": ["", "", ""]
-    }
+    },
+    "on-click": "exec ~/.hyprscripts/volume.sh --toggle"
   },
   "hyprland/workspaces": {
     "format": "{icon}",

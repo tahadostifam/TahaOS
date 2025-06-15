@@ -9,7 +9,7 @@ program = "zsh"
 style = "Beam"
 
 [font]
-size = 13.0
+size = 12.0
 
 [font.normal]
 family = "RobotoMono Nerd Font"
@@ -17,29 +17,29 @@ family = "RobotoMono Nerd Font"
 [window]
 startup_mode = "Windowed"
 dynamic_padding = true
-opacity = 0.8
+opacity = 0.3
 
 [window.padding]
 x = 0
 y = 0
 
 [colors.primary]
-background = "#121212"
+background = "#1e1d21"
 
 [colors.normal]
 black = "#bebebe"
 red = "#ff0000"
-green = "#59e02f"
+green = "#8a4aff"
 yellow = "#ffae00"
-blue = "#1c95ff"
+blue = "#1b4ae3"
 magenta = "#ff10bf"
-cyan = "#07ffd6"
+cyan = "#4fd3ff"
 white = "#BAC2DE"
 
 [colors.bright]
 black = "#bebebe"
 red = "#ff0000"
-green = "#71d950"
+green = "#9f6dfc"
 yellow = "#ffae00"
 blue = "#1389f0"
 magenta = "#ff10bf"
