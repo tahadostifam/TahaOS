@@ -31,12 +31,12 @@
       ''
         swww img ~/hyprwall.jpg --transition-type grow --transition-pos "$(hyprctl cursorpos)" --transition-duration 2
       ''
-      "swaync"
+      # "swaync"
       "nm-applet"
     ];
 
     input = {
-      kb_layout = "us,ir";
+      kb_layout = "us,fa";
       kb_options = "grp:alt_shift_toggle";
       kb_variant = ",qwerty";
       follow_mouse = 1;
@@ -106,7 +106,7 @@
       [
         "SUPER,RETURN,exec,alacritty"
         "SUPER,Q,killactive,"
-        "SUPER,M,exec,nwg-bar"
+        "SUPER,M,exec,nwg-bar ~/.config/nwg-bar/config.json"
         "SUPER,E,exec, nautilus"
         "SUPER,S,togglefloating,"
         "SUPER,R,exec,wofi --show drun"
