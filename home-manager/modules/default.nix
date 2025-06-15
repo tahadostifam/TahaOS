@@ -10,7 +10,6 @@
     ./llvm.nix
     ./swaync
     ./waybar
-    ./nwg-bar
     # ./neovim.nix
   ];
 }
