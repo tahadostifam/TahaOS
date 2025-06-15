@@ -40,9 +40,6 @@
       kb_layout = "us,ir";
       kb_options = "grp:alt_shift_toggle";
       kb_variant = "ffffff";
-      kb_model = "";
-      kb_rules = "";
-
       follow_mouse = 1;
 
       touchpad = {
