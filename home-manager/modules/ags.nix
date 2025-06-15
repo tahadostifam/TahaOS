@@ -25,6 +25,8 @@
     inputs.matugen.packages.${system}.default
 
     gjs
+    glib
+    glibc
     gnome.gvfs
     astal.io
     astal.cava
