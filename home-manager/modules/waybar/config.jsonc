@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "height": 34,
-  "modules-left": ["image#distro", "hyprland/workspaces"],
+  "modules-left": ["image", "hyprland/workspaces"],
   "modules-center": [],
   "modules-right": [
     "hyprland/language",
@@ -23,7 +23,7 @@
     "format-fa": "FA"
   },
   "image#distro": {
-    "path": "./distro.png",
+    "path": "~/.config/waybar/distro.png",
     "size": 20
   },
   "tray": {

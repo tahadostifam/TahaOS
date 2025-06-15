@@ -39,10 +39,11 @@ image {
 #workspaces {
   background: transparent;
   margin-right: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 #workspaces button:hover {
+  background: transparent;
   border: none;
 }
 
@@ -55,7 +56,7 @@ image {
 }
 
 #workspaces button.active {
-  color: #3d3a47;
+  background: transparent;
 }
 
 #clock {
