@@ -36,9 +36,8 @@
     ];
 
     input = {
-      kb_layout = "us,fa";
+      kb_layout = "us";
       kb_options = "grp:alt_shift_toggle";
-      kb_variant = ",qwerty";
       follow_mouse = 1;
 
       touchpad = {

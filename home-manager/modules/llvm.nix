@@ -11,6 +11,7 @@
     gnumake
     clang-tools
     clang
+    nasm
   ];
 
   home.sessionVariables = {
