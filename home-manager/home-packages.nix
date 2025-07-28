@@ -8,11 +8,14 @@
     pavucontrol
     telegram-desktop
     google-chrome
+    tor-browser
     nekoray
     vscode
     postman
     vim
-    
+    obsidian
+    zed
+
     # CLI utils
     playerctl
     unzip
