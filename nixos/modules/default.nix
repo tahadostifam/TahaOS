@@ -5,7 +5,7 @@
     ./boot.nix
     ./env.nix
     ./home-manager.nix
-    ./gnome.nix
+    ./kde.nix
     ./hyprland.nix
     ./kernel.nix
     ./mime.nix

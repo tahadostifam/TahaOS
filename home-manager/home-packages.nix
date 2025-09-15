@@ -11,10 +11,10 @@
     tor-browser
     nekoray
     vscode
+    code-cursor
     postman
     vim
     obsidian
-    zed
 
     # CLI utils
     playerctl
@@ -24,6 +24,7 @@
 
     # Coding stuff
     nodejs
+    deno
     pnpm
     yarn
     python311

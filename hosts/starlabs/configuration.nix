@@ -7,6 +7,8 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
+
+  programs.nix-ld.enable = true;
   
   environment.systemPackages = [ pkgs.home-manager ];
   networking.hostName = hostname;
