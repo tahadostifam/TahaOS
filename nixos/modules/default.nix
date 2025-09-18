@@ -17,5 +17,6 @@
     ./zram.nix
     ./docker.nix
     ./printing.nix
+    ./wine.nix
   ];
 }
