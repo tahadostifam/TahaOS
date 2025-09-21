@@ -91,11 +91,6 @@
       force_split = 0;
     };
 
-    gestures = {
-      workspace_swipe = "yes";
-      workspace_swipe_fingers = 4;
-    };
-
     bindm = [
       "SUPER,mouse:272,movewindow"
       "SUPER,mouse:273,resizewindow"

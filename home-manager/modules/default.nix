@@ -9,5 +9,6 @@
     ./llvm.nix
     ./swaync
     ./waybar
+    ./gnome.nix
   ];
 }

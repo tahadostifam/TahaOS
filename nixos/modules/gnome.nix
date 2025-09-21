@@ -4,6 +4,13 @@
     desktopManager.gnome.enable = true;
   };
 
+  environment.systemPackages = with pkgs; [ 
+    gnomeExtensions.appindicator
+    gnomeExtensions.dock-from-dash
+    pkgs.gnome-settings-daemon
+    pkgs.adwaita-icon-theme
+  ];
+
   environment.gnome.excludePackages = (with pkgs; [
     atomix # puzzle game
     cheese # webcam tool
@@ -19,17 +26,4 @@
     tali # poker game
     totem # video player
   ]);
-
-  home-manager.users.${user} = {
-    dconf = {
-      enable = true;
-      settings."org/gnome/shell" = {
-        disable-user-extensions = false;
-        enabled-extensions = with pkgs.gnomeExtensions; [
-          blur-my-shell.extensionUuid
-          gsconnect.extensionUuid
-        ];
-      };
-    };
-  };
 }
