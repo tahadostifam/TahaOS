@@ -29,7 +29,7 @@
     yarn
     python311
     ruby 
-    # rustup
+    rustup
     go
 
     # DB
