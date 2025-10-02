@@ -18,5 +18,6 @@
     ./docker.nix
     ./printing.nix
     ./wine.nix
+    ./vbox.nix
   ];
 }
