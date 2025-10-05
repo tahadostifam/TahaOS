@@ -15,7 +15,7 @@
   ];
 
   home.sessionVariables = {
-    LIBRARY_PATH="${pkgs.glibc}/lib:${pkgs.gcc_multi}/lib:${pkgs.llvm_18.lib}/lib:${pkgs.libxml2}/lib:${pkgs.libffi}/lib";
-    LLVM_SYS_180_PREFIX="${pkgs.llvm_18.dev}";
+    LIBRARY_PATH = "${pkgs.glibc}/lib:${pkgs.gcc_multi}/lib:${pkgs.llvm_18.lib}/lib:${pkgs.libxml2}/lib:${pkgs.libffi}/lib";
+    LLVM_SYS_180_PREFIX = "${pkgs.llvm_18.dev}";
   };
 }

@@ -10,5 +10,6 @@
     ./swaync
     ./waybar
     ./gnome.nix
+    ./ruby_on_rails.nix
   ];
 }
