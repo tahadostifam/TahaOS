@@ -28,9 +28,9 @@
       "waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css"
       "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
       "gnome-keyring-daemon --replace --daemonize --components=pkcs11,secrets,ssh"
-      ''
-        swww img ~/hyprwall.jpg --transition-type grow --transition-pos "$(hyprctl cursorpos)" --transition-duration 2
-      ''
+      # ''
+      #   swww img ~/hyprwall.jpg --transition-type grow --transition-pos "$(hyprctl cursorpos)" --transition-duration 2
+      # ''
       # "swaync"
       "nm-applet"
     ];
@@ -46,7 +46,7 @@
     };
 
     general = {
-      gaps_in = 8;
+      gaps_in = 5;
       gaps_out = 15;
       border_size = 0; # set 2 if you like
       allow_tearing = true;
@@ -56,16 +56,15 @@
     };
 
     decoration = {
-      rounding = 7;
+      rounding = 5;
       shadow = {
         enabled = false;
       };
       blur = {
         enabled = true;
-        size = 4;
-        passes = 2;
+        size = 5;
+        passes = 3;
         new_optimizations = "yes";
-        ignore_opacity = true;
       };
     };
 
@@ -75,14 +74,13 @@
 
     animations = {
       enabled = true;
-      bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
       animation = [
-        "windows,     1, 7,  myBezier"
-        "windowsOut,  1, 7,  default, popin 80%"
+        "workspaces,  1, 6,  default, slidevert"
+        "windows,     1, 6,  default, slide bottom"
+        "windowsOut,  1, 7,  default, slide bottom"
         "border,      1, 10, default"
         "borderangle, 1, 8,  default"
         "fade,        1, 7,  default"
-        "workspaces,  1, 6,  default"
       ];
     };
 

@@ -28,7 +28,6 @@
     pnpm
     yarn
     python311
-    ruby 
     rustup
     go
 

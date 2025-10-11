@@ -14,7 +14,7 @@ window {
   color: #fff;
   font-weight: bold;
   background: #050505;
-  border: 2px solid #8a4aff;
+  border: 2px solid #11c40e;
   outline: none;
   border-radius: 5px;
   margin: 10px;
@@ -23,7 +23,7 @@ window {
 
 #input:focus, #input:hover {
   outline: none;
-  border: 2px solid #8a4aff;
+  border: 2px solid #11c40e;
 }
 
 #inner-box {
@@ -73,5 +73,5 @@ window {
   margin: 0px 0px;
   border: none;
   border-radius: 5px;
-  background: #8a4aff;
+  background: #11c40e;
 }

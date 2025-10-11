@@ -9,9 +9,8 @@
     libffi.dev
     cmake
     gnumake
-    clang-tools
-    clang
     nasm
+    gcc
   ];
 
   home.sessionVariables = {
