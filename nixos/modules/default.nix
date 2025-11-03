@@ -20,6 +20,5 @@
     ./wine.nix
     ./vbox.nix
     ./qemu.nix
-    ./android-studio.nix
   ];
 }

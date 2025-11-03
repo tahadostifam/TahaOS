@@ -8,6 +8,7 @@
     gnomeExtensions.appindicator
     gnomeExtensions.dock-from-dash
     pkgs.gnome-settings-daemon
+    pkgs.gnome-control-center
     pkgs.adwaita-icon-theme
     pkgs.gnome-tweaks
   ];
