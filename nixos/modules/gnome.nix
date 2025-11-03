@@ -4,11 +4,12 @@
     desktopManager.gnome.enable = true;
   };
 
-  environment.systemPackages = with pkgs; [ 
+  environment.systemPackages = with pkgs; [
     gnomeExtensions.appindicator
     gnomeExtensions.dock-from-dash
     pkgs.gnome-settings-daemon
     pkgs.adwaita-icon-theme
+    pkgs.gnome-tweaks
   ];
 
   environment.gnome.excludePackages = (with pkgs; [
