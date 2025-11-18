@@ -3,11 +3,6 @@
     ./scripts
   ];
 
-  # Load Wallpaper
-  home.file."hyprwall.jpg" = {
-    source = ./default_wall.jpg;
-  };
-
   home.sessionVariables = {
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_TYPE = "wayland";

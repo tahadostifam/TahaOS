@@ -7,14 +7,11 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
-
   programs.nix-ld.enable = true;
   
-  environment.systemPackages = [ pkgs.home-manager ];
   networking.hostName = hostname;
   system.stateVersion = stateVersion;
 
-  # Enable OpenGL
   hardware.graphics = { 
     enable = true;
   };
@@ -29,5 +26,10 @@
     nvidiaSettings = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
+
+  environment.systemPackages = with pkgs; [
+    home-manager
+    cudaPackages.cudatoolkit
+  ];
 }
 
