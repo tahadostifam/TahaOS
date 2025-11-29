@@ -1,12 +1,13 @@
 { config, pkgs, lib, ... }:
 
 let
+  root = ./.;
   themesDir = "${root}/themes";
-  extensionsDir = "${root}/extensions";
+  # extensionsDir = "${root}/extensions";
   themeNames =
     builtins.attrNames (builtins.readDir themesDir);
-  extensionNames =
-    builtins.attrNames (builtins.readDir extensionsDir);
+  # extensionNames =
+  #   builtins.attrNames (builtins.readDir extensionsDir);
 in
 {
   # install themes
@@ -15,10 +16,10 @@ in
       target = ".themes/${t}";
       source = "${themesDir}/${t}";
     }))
-    (lib.genAttrs extensionNames (ext: {
-      target = ".local/share/gnome-shell/extensions/${ext}";
-      source = "${extensionsDir}/${ext}";
-    }))
+    # (lib.genAttrs extensionNames (ext: {
+    #   target = ".local/share/gnome-shell/extensions/${ext}";
+    #   source = "${extensionsDir}/${ext}";
+    # }))
   ];
 
   dconf = {
@@ -26,9 +27,6 @@ in
 
     settings."org/gnome/shell" = {
       disable-user-extensions = false;
-      enabled-extensions = map
-        (extName: extName)
-        extensionNames;
     };
   };
 }
