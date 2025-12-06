@@ -13,6 +13,10 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ags.url = "github:Aylur/ags";
+    matugen.url = "github:InioX/matugen?ref=v2.2.0";
+    astal.url = "github:Aylur/astal";
   };
 
   outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:

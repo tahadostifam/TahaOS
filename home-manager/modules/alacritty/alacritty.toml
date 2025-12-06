@@ -17,7 +17,7 @@ family = "RobotoMono Nerd Font"
 [window]
 startup_mode = "Windowed"
 dynamic_padding = true
-opacity = 0.3
+opacity = 1
 
 [window.padding]
 x = 0
@@ -27,34 +27,34 @@ y = 0
 background = "#030303"
 
 [colors.normal]
-black = "#bebebe"
-red = "#ff0000"
-green = "#11c40e"
-yellow = "#ffae00"
-blue = "#27b1db"
-magenta = "#ff10bf"
-cyan = "#0f8fba"
-white = "#BAC2DE"
+black = "#d0d0d0"
+red = "#ff3b3b"
+green = "#c082ff"
+yellow = "#ffd54a"
+blue = "#35baf6"
+magenta = "#ff3ef3"
+cyan = "#18c2e6"
+white = "#e3e8ff"
 
 [colors.bright]
-black = "#bebebe"
-red = "#ff0000"
-green = "#16f564"
-yellow = "#ffae00"
-blue = "#1389f0"
-magenta = "#ff10bf"
-cyan = "#09967f"
-white = "#A6ADC8"
+black = "#e0e0e0"
+red = "#ff5555"
+green = "#d29cff"
+yellow = "#ffdd66"
+blue = "#4cbaff"
+magenta = "#ff5aff"
+cyan = "#22e0df"
+white = "#eef1ff"
 
 [colors.dim]
-black = "#bebebe"
-red = "#ff0000"
-green = "#ff923e"
-yellow = "#ffae00"
-blue = "#ff6f00"
-magenta = "#ff10bf"
-cyan = "#08332c"
-white = "#BAC2DE"
+black = "#b6b6b6"
+red = "#b03232"
+green = "#a96cee"
+yellow = "#d9b640"
+blue = "#2a8ed1"
+magenta = "#d63acc"
+cyan = "#0f6f75"
+white = "#cdd3e9"
 
 [colors.cursor]
 text = "CellBackground"

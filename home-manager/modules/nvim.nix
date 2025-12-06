@@ -1,8 +1,8 @@
-{
-  pkgs,
-  lib,
-  ...
-}: let
+{ pkgs
+, lib
+, ...
+}:
+let
   deps =
     if pkgs.stdenv.isLinux
     then
@@ -13,8 +13,9 @@
         stylua
         alejandra
       ]
-    else [];
-in {
+    else [ ];
+in
+{
   xdg = {
     configFile.nvim.source = ../nvim;
     desktopEntries."nvim" = lib.mkIf pkgs.stdenv.isLinux {
@@ -22,9 +23,9 @@ in {
       comment = "Edit text files";
       icon = "nvim";
       exec = "xterm -e ${pkgs.neovim}/bin/nvim %F";
-      categories = ["TerminalEmulator"];
+      categories = [ "TerminalEmulator" ];
       terminal = false;
-      mimeType = ["text/plain"];
+      mimeType = [ "text/plain" ];
     };
   };
 

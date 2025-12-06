@@ -11,5 +11,6 @@
     ./waybar
     ./gnome
     ./ruby_on_rails.nix
+    ./ags.nix
   ];
 }

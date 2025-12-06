@@ -26,7 +26,7 @@
       ''
         swww img ~/hyprwall.jpg --transition-type grow --transition-pos "$(hyprctl cursorpos)" --transition-duration 1
       ''
-      # "swaync"
+      "hyprctl setcursor Rin-Penrose 24"
       "nm-applet"
     ];
 
