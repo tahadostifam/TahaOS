@@ -23,7 +23,10 @@
     let
       system = "x86_64-linux";
       user = "taha";
-      hosts = [{ hostname = "starlabs"; stateVersion = "25.05"; }];
+      hosts = [
+        { hostname = "starlabs"; stateVersion = "25.05"; }
+        { hostname = "yhwach"; stateVersion = "25.05"; }
+      ];
       homeStateVersion = "25.05";
 
       makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
