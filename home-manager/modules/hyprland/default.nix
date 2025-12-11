@@ -19,6 +19,17 @@
       ''
       "hyprctl setcursor Rin-Penrose 24"
       "nm-applet"
+      ''
+        sh -c '
+          export XDG_CURRENT_DESKTOP="Hyprland"
+          export XDG_SESSION_DESKTOP="Hyprland"
+          export XDG_SESSION_TYPE="wayland"
+          export GDK_BACKEND="wayland,x11"
+          export CLUTTER_BACKEND="wayland"
+          export WLR_RENDERER="vulkan"
+          export TERMINAL="alacritty"
+        '
+      ''
     ];
 
     input = {
