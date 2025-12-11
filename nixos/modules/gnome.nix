@@ -4,7 +4,7 @@
     desktopManager.gnome.enable = true;
   };
 
-  environment.sessionVariables = lib.mkIf config.services.xserver.desktopManager.gnome.enable {
+  environment.sessionVariables = {
     XDG_CURRENT_DESKTOP = "GNOME";
   };
 
