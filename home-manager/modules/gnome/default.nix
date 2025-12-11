@@ -30,7 +30,7 @@ in
     };
   };
 
-  home.sessionVariables = lib.mkIf (config.xdg.portal.enable && config.xdg.portal.gtkUseGtk3) {
+  home.sessionVariables = {
     XDG_CURRENT_DESKTOP = "GNOME";
     XDG_SESSION_DESKTOP = "GNOME";
     XDG_SESSION_TYPE = "wayland";
