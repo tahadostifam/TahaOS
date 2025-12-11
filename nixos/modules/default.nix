@@ -20,5 +20,6 @@
     ./wine.nix
     ./vbox.nix
     ./qemu.nix
+    ./sshd.nix
   ];
 }

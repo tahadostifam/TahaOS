@@ -1,9 +1,9 @@
 {
-  systemd.services.openssh = {
+  services.openssh = {
     enable = true;
-    permitRootLogin = "no";
-    passwordAuthentication = true;
+    settings = {
+      PermitRootLogin = "no";
+      PasswordAuthentication = true;
+    };
   };
-
-  systemd.services.openssh.forwardX11 = true;
 }
