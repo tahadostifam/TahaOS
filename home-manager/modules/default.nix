@@ -9,8 +9,7 @@
     ./llvm.nix
     ./swaync
     ./waybar
-    ./gnome
     ./ruby_on_rails.nix
-    ./ags.nix
+    ./gnome
   ];
 }

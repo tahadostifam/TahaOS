@@ -1,4 +1,4 @@
-{ config, pkgs, lib, isGnome, ... }:
+{ config, pkgs, lib, ... }:
 
 let
   root = ./.;
@@ -30,7 +30,7 @@ in
     };
   };
 
-  home.sessionVariables = lib.mkIf isGnome {
+  home.sessionVariables = lib.mkIf config.services.xserver.desktopManager.gnome.enable {
     XDG_CURRENT_DESKTOP = "GNOME";
     XDG_SESSION_DESKTOP = "GNOME";
     XDG_SESSION_TYPE = "wayland";

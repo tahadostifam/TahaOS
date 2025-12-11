@@ -1,4 +1,4 @@
-{ pkgs, user, lib, config, ... }: {
+{ pkgs, user, ... }: {
   services.xserver = {
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
@@ -27,8 +27,4 @@
     tali # poker game
     totem # video player
   ]);
-
-  _module.args = {
-    isGnome = config.services.xserver.desktopManager.gnome.enable;
-  };
 }

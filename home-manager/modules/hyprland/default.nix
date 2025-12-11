@@ -1,16 +1,7 @@
-{ config, lib, pkgs, isHyprland, ... }: {
+{ config, lib, pkgs, ... }: {
   imports = [
     ./scripts
   ];
-
-  home.sessionVariables = lib.mkIf isHyprland {
-    XDG_CURRENT_DESKTOP = "Hyprland";
-    XDG_SESSION_DESKTOP = "Hyprland";
-    XDG_SESSION_TYPE = "wayland";
-    GDK_BACKEND = "wayland,x11";
-    CLUTTER_BACKEND = "wayland";
-    WLR_RENDERER = "vulkan";
-  };
 
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.xwayland.enable = true;
