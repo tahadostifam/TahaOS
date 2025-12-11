@@ -4,6 +4,10 @@
     desktopManager.gnome.enable = true;
   };
 
+  environment.sessionVariables = lib.mkIf config.services.xserver.desktopManager.gnome.enable {
+    XDG_CURRENT_DESKTOP = "GNOME";
+  };
+
   environment.systemPackages = with pkgs; [
     gnomeExtensions.appindicator
     gnomeExtensions.dock-from-dash
@@ -15,7 +19,6 @@
 
   environment.gnome.excludePackages = (with pkgs; [
     atomix # puzzle game
-    cheese # webcam tool
     epiphany # web browser
     evince # document viewer
     geary # email reader
