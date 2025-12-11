@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, isGnome, ... }:
 
 let
   root = ./.;
@@ -28,5 +28,11 @@ in
     settings."org/gnome/shell" = {
       disable-user-extensions = false;
     };
+  };
+
+  home.sessionVariables = lib.mkIf isGnome {
+    XDG_CURRENT_DESKTOP = "GNOME";
+    XDG_SESSION_DESKTOP = "GNOME";
+    XDG_SESSION_TYPE = "wayland";
   };
 }

@@ -1,4 +1,4 @@
-{ unstablePkgs, ... }: {
+{ unstablePkgs, config, ... }: {
   programs.hyprland = {
     enable = true;
     package = unstablePkgs.hyprland;
@@ -8,4 +8,8 @@
   };
 
   security.pam.services.hyprlock = { };
+
+  _module.args = {
+    isHyprland = config.programs.hyprland.enable;
+  };
 }

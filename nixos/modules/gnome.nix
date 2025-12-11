@@ -1,11 +1,7 @@
-{ pkgs, user, lib, ... }: {
+{ pkgs, user, lib, config, ... }: {
   services.xserver = {
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
-  };
-
-  environment.sessionVariables = {
-    XDG_CURRENT_DESKTOP = "GNOME";
   };
 
   environment.systemPackages = with pkgs; [
@@ -31,4 +27,8 @@
     tali # poker game
     totem # video player
   ]);
+
+  _module.args = {
+    isGnome = config.services.xserver.desktopManager.gnome.enable;
+  };
 }

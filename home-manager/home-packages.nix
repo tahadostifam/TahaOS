@@ -8,13 +8,13 @@
     pavucontrol
     telegram-desktop
     google-chrome
-    tor-browser
     nekoray
     vscode
-    code-cursor
     postman
     vim
     obsidian
+    xournalpp
+    remmina
 
     # CLI utils
     playerctl
