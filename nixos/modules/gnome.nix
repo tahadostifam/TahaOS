@@ -1,4 +1,4 @@
-{ pkgs, user, ... }: {
+{ pkgs, user, lib, ... }: {
   services.xserver = {
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
