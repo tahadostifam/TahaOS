@@ -16,7 +16,7 @@ label.module {
 }
 
 window#waybar {
-  background: shade(alpha(#000000, 0.95), 0.95);
+  background: shade(#0f0f0f, 0.2);
 }
 
 image {

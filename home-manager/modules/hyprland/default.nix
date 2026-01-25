@@ -3,6 +3,16 @@
     ./scripts
   ];
 
+  home.sessionVariables = {
+    XDG_CURRENT_DESKTOP = lib.mkForce "Hyprland";
+    XDG_SESSION_DESKTOP = lib.mkForce "Hyprland";
+    XDG_SESSION_TYPE = "wayland";
+    GDK_BACKEND = "wayland,x11";
+    CLUTTER_BACKEND = "wayland";
+    WLR_RENDERER = "vulkan";
+    TERMINAL = "alacritty";
+  };
+
   wayland.windowManager.hyprland.enable = true;
   wayland.windowManager.hyprland.xwayland.enable = true;
   wayland.windowManager.hyprland.systemd.variables = [ "--all" ];
@@ -19,17 +29,6 @@
       ''
       "hyprctl setcursor Rin-Penrose 24"
       "nm-applet"
-      ''
-        sh -c '
-          export XDG_CURRENT_DESKTOP="Hyprland"
-          export XDG_SESSION_DESKTOP="Hyprland"
-          export XDG_SESSION_TYPE="wayland"
-          export GDK_BACKEND="wayland,x11"
-          export CLUTTER_BACKEND="wayland"
-          export WLR_RENDERER="vulkan"
-          export TERMINAL="alacritty"
-        '
-      ''
     ];
 
     input = {
