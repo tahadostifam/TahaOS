@@ -1,15 +1,30 @@
+{ config, pkgs, inputs, user, homeStateVersion, desktop, ... }:
+
 {
   imports = [
     ./git.nix
-    ./hyprland
     ./fonts.nix
-    ./wofi
     ./zsh.nix
-    ./alacritty
     ./llvm.nix
+    ./ruby_on_rails.nix
+  ]
+  
+  ++ (if desktop == "hyprland" then [
+    ./hyprland
+    ./wofi
+    ./alacritty
     ./swaync
     ./waybar
-    ./ruby_on_rails.nix
+  ] else [])
+  
+  ++ (if desktop == "gnome" then [
     ./gnome
-  ];
+  ] else []);
+
+  
+  home = {
+    username = user;
+    homeDirectory = "/home/${user}";
+    stateVersion = homeStateVersion;
+  };
 }
