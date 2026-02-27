@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../../nixos/modules
+    ./nixos/modules
   ];
 
   nixpkgs.config.allowUnfree = true;

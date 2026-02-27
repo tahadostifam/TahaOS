@@ -24,6 +24,7 @@ in
     imports = [
       (mkIf (cfg.environment == "gnome") ./gnome)
       (mkIf (cfg.environment == "hyprland") ./hyprland)
+      (mkIf (cfg.environment == "kde") ./kde)
     ];
   };
 }
