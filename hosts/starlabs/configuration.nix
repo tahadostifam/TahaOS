@@ -8,11 +8,11 @@
 
   nixpkgs.config.allowUnfree = true;
   programs.nix-ld.enable = true;
-  
+
   networking.hostName = hostname;
   system.stateVersion = stateVersion;
 
-  hardware.graphics = { 
+  hardware.graphics = {
     enable = true;
   };
 

@@ -24,8 +24,8 @@
       system = "x86_64-linux";
       user = "taha";
       hosts = [
-        { hostname = "starlabs"; stateVersion = "25.05"; }
-        { hostname = "yhwach"; stateVersion = "25.05"; }
+        { hostname = "starlabs"; stateVersion = "25.05"; desktop = "hyprland"; }
+        { hostname = "yhwach"; stateVersion = "25.05"; desktop = "gnome"; }
       ];
       homeStateVersion = "25.05";
 
