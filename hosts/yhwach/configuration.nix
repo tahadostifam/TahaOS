@@ -3,21 +3,11 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ../../nixos/modules
+    ../shared.nix
   ];
 
-  nixpkgs.config.allowUnfree = true;
-  programs.nix-ld.enable = true;
-  
-  networking.hostName = hostname;
-  system.stateVersion = stateVersion;
+  networking.hostName = "yhwach";
+  desktop.environment = "gnome";
 
-  hardware.graphics = { 
-    enable = true;
-  };
-
-  environment.systemPackages = with pkgs; [
-    home-manager
-  ];
+  environment.systemPackages = with pkgs; [ ];
 }
-
