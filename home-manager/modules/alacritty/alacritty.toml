@@ -17,19 +17,19 @@ family = "RobotoMono Nerd Font"
 [window]
 startup_mode = "Windowed"
 dynamic_padding = true
-opacity = 0.7
+opacity = 0.95
 
 [window.padding]
 x = 0
 y = 0
 
 [colors.primary]
-background = "#262626"
+background = "#0a0a0a"
 
 [colors.normal]
 black = "#d0d0d0"
 red = "#ff3b3b"
-green = "#942bff"
+green = "#08c22d"
 yellow = "#ffd54a"
 blue = "#35baf6"
 magenta = "#ff3ef3"
@@ -38,7 +38,7 @@ white = "#e3e8ff"
 
 [colors.bright]
 black = "#e0e0e0"
-red = "#ff5555"
+red = "#4cc26f"
 green = "#a566d9"
 yellow = "#ffdd66"
 blue = "#4cbaff"
@@ -49,9 +49,9 @@ white = "#eef1ff"
 [colors.dim]
 black = "#b6b6b6"
 red = "#b03232"
-green = "#a96cee"
+green = "#34f7a9"
 yellow = "#d9b640"
-blue = "#2a8ed1"
+blue = "#0c87fa"
 magenta = "#d63acc"
 cyan = "#0f6f75"
 white = "#cdd3e9"
